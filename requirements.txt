@@ -6,3 +6,4 @@ discord
 psutil
 asyncio
 async_timeout
+dotenv
