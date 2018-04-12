@@ -135,6 +135,10 @@ async def run(ctx, *, text):
     exec(text)
 
 @bot.command()
+async def random(ctx, min, max):
+    await ctx.send(random.randint(min, max))
+
+@bot.command()
 async def help(ctx):
     cmd_help = "**.help** Explains how to use commands.\n"
     cmd_info = "**.info** Tells what the info commands are.\n"
