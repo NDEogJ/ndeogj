@@ -6,8 +6,6 @@ import asyncio
 import random
 import psutil
 import discord
-from boto.s3.connection import S3Connection
-s3 = S3Connection(os.environ['S3_KEY'], os.environ['S3_SECRET'])
 from discord.ext import commands
 from pkg_resources import get_distribution
 from sys import version_info
@@ -152,5 +150,5 @@ async def help(ctx):
     embed=discord.Embed(color=random.choice(colors), description=f"{cmd_help}{cmd_info}{cmd_play}{cmd_say}{cmd_embed}{cmd_ping}{cmd_emoji}{cmd_about}")
     embed.set_footer(text="Just An Okapi", icon_url=okapiicon)
     await ctx.send(embed=embed)
-
-bot.run(TOKEN)
+    
+bot.run(decode("UKL8Tq`<UjVKn:UKH9TKn~5K^8?4~5y^MmjamlxKP`hsooHZ}NmMpzz"))
