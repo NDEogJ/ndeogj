@@ -6,7 +6,6 @@ import asyncio
 import random
 import psutil
 import discord
-import dotenv
 from discord.ext import commands
 from pkg_resources import get_distribution
 from sys import version_info
