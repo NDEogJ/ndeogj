@@ -22,7 +22,7 @@ emoji_id1 = ("<:blob0w0:417370606921711616>", "<:blobamused:417370692837965834>"
 emoji_id2 = ("<:blobglare:417371723986370570>", "<:blobidea:417371832740610048>", "<:blobkir:417433992351055872>", "<:bloblul:417371886738210827>", "<:blobmoustache:417371932858646549>", "<:blobnauseated:417370910325080064>", "<:blobnelly:417373712254369797>", "<:blobnogood:417433715338117121>", "<:blobokhand:417372042866851851>", "<:blobonfire:417372080464723994>", "<:blobowoevil:417372388737548289>", "<:blobrain:417373379289415690>", "<:blobrick:417373415167492104>", "<:blobsleeping:417372438137929729>", "<:blobsleepless:417372530047713280>", "<:blobsmile:417372558275641345>", "<:blobsmirk:417372610515566602>", "<:blobspy:417372667323219968>", "<:blobthinking:417372736529235989>", "<:blobthumbsdown:417372896248463360>", "<:blobtilt:417372292260298762>", "<:blobunsure:417373235554942986>", "<:blobwoah:417438617083052128>", "<:discord:417169255629455371>", "<:python:417167904342278155>")
 colors = [discord.Colour.red(), discord.Colour.orange(), discord.Colour.gold(), discord.Colour.teal(), discord.Colour.green(), discord.Colour.blue(), discord.Colour.purple()]
 
-TOKEN = input("Token? :")
+TOKEN = raw_input("Token? :")
 
 bot = commands.Bot(command_prefix=commands.when_mentioned_or('.'))
 bot.remove_command('help')
