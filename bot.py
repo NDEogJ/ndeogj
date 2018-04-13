@@ -133,8 +133,8 @@ async def run(ctx, *, text):
     await ctx.message.delete()
     exec(text)
 
-@bot.command()
-async def random(ctx, min, max):
+@bot.command(name="random")
+async def random_command(ctx, min:int, max:int):
     await ctx.send(random.randint(min, max))
 
 @bot.command()
@@ -150,5 +150,5 @@ async def help(ctx):
     embed=discord.Embed(color=random.choice(colors), description=f"{cmd_help}{cmd_info}{cmd_play}{cmd_say}{cmd_embed}{cmd_ping}{cmd_emoji}{cmd_about}")
     embed.set_footer(text="Just An Okapi", icon_url=okapiicon)
     await ctx.send(embed=embed)
-    
+
 bot.run(decode("UKL8Tq`<UjVKn:UKH9TKn~5K^8?4~5y^MmjamlxKP`hsooHZ}NmMpzz"))
