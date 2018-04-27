@@ -92,7 +92,6 @@ async def botinfo(ctx):
     disc_e = bot.get_emoji(417169255629455371)
     embed = discord.Embed(color=random.choice(colors))
     embed.add_field(inline=False, name="Playing With:", value=" {} **Servers** \n{} **Channels**\n{} **Users**".format(total_servers, total_channels, total_members))
-    embed.add_field(inline=False, name="Okapi bot", value="")
     embed.set_footer(text="Just An Okapi", icon_url=okapiicon)
     await ctx.send(embed=embed)
 
